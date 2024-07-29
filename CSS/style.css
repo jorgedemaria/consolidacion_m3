@@ -334,6 +334,15 @@ p {
     transform: scale(1.02);
 }
 
+footer {
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 3px;
+}
+
+
 /* TABLET */
 @media (min-width: 992px) {
 
@@ -498,7 +507,7 @@ p {
         font-weight: 300;
     }
 
-    .fa-check-double{
+    .fa-check-double {
         color: lightgray;
         font-size: 15px;
     }
