@@ -8,20 +8,23 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="CSS/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Mono:wght@100..900&display=swap" rel="stylesheet">  <link rel="stylesheet" href="CSS/style.css">
 </head>
 
 <body>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Cluster Records<img src="https://images.squarespace-cdn.com/content/v1/5507d804e4b0692c841acae7/1564477013136-3OBYTXVEE9IMZVJWKWYK/Cluster+X+Logo" alt="Cluster Records" id="clusterlogo"></a>
+      <a class="navbar-brand" href="#"><strong>Cluster Records</strong><img
+          src="https://images.squarespace-cdn.com/content/v1/5507d804e4b0692c841acae7/1564477013136-3OBYTXVEE9IMZVJWKWYK/Cluster+X+Logo"
+          alt="Cluster Records" id="clusterlogo"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav nav-underline">
           <li class="nav-item flex-grow-1">
             <a class="nav-link" href="index.html">Inicio</a>
           </li>
@@ -44,7 +47,7 @@
             <a class="nav-link" href="empresa.html">Organigrama de la empresa</a>
           </li>
           <li class="nav-item flex-grow-1">
-            <a class="nav-link actvive" aria-current="page" href="chat.html">Chat</a>
+            <a class="nav-link actvive" aria-current="page" href="chat.html"><strong>Chat</strong></a>
           </li>
         </ul>
       </div>
@@ -69,31 +72,29 @@
           </div>
         </div>
         <ul class="chat-list__menu">
-          <li class="chat-list__item chat-active">
+          <li class="chat-list__item" id="chat-info-emma">
             <div class="chat-list__content">
               <div class="chat-list__img">
                 <img src="https://mighty.tools/mockmind-api/content/abstract/36.jpg" alt="">
               </div>
               <div class="chat-list__info">
                 <div class="chat-list__name">
-                  <h5>Emma</h5>
-                   <div><i class="fa-solid fa-check-double"></i></div>
+                  <h5>Emma <span class="icon-right"><i class="fa-solid fa-check-double"></i></span></h5>
                 </div>
-                <p>¡Hasta luego, Emma!</p>
+                <p>¡Hasta luego, Emma! <span class="message-time">15:55</span></p>
               </div>
             </div>
           </li>
-          <li class="chat-list__item no-leido">
+          <li class="chat-list__item">
             <div class="chat-list__content">
               <div class="chat-list__img">
                 <img src="https://mighty.tools/mockmind-api/content/abstract/51.jpg" alt="">
               </div>
               <div class="chat-list__info">
                 <div class="chat-list__name">
-                  <h5>Alexis</h5>
-                  <div><i class="fa-solid fa-check-double"></i></div>
+                  <h5>Alexis <span class="icon-right"><i class="fa-solid fa-check-double"></i></span></h5>
                 </div>
-                <p>¿Puedo rastrear mi pedido de vinilos en línea?</p>
+                <p>¡Sí! Tenemos una gran variedad de controladores MIDI para que puedas crear y producir música electrónica con facilidad. <span class="message-time">14:27</span></p>
               </div>
             </div>
           </li>
@@ -104,9 +105,9 @@
               </div>
               <div class="chat-list__info">
                 <div class="chat-list__name">
-                  <h5>Ángel</h5><i class="fa-solid fa-check-double"></i>
+                  <h5>Ángel <span class="icon-right"><i class="fa-solid fa-check-double"></i></span></h5>
                 </div>
-                <p>Tu pedido debería llegar en 2-3 días hábiles.</p>
+                <p>Tu pedido debería llegar en 2-3 días hábiles. <span class="message-time">11:45</span></p>
               </div>
             </div>
           </li>
@@ -117,35 +118,35 @@
               </div>
               <div class="chat-list__info">
                 <div class="chat-list__name">
-                  <h5>Marian</h5><i class="fa-solid fa-check-double"></i>
+                  <h5>Marian <span class="icon-right"><i class="fa-solid fa-check-double"></i></span></h5>
                 </div>
-                <p>Sí, te enviaremos notificaciones por correo y puedes seguir el envío en nuestra app</p>
+                <p>Sí, te enviaremos notificaciones por correo y puedes seguir el envío en nuestra app. <span class="message-time">27/07/24</span></p>
               </div>
             </div>
           </li>
-          <li class="chat-list__item no-leido">
+          <li class="chat-list__item">
             <div class="chat-list__content">
               <div class="chat-list__img">
                 <img src="https://mighty.tools/mockmind-api/content/abstract/40.jpg" alt="">
               </div>
               <div class="chat-list__info">
                 <div class="chat-list__name">
-                  <h5>Rocío</h5>
+                  <h5>Rocío <span class="icon-right"><i class="fa-solid fa-check-double"></i></span></h5>
                 </div>
-                <p>¿Cuánto tiempo tarda en llegar el pedido?</p>
+                <p>Estamos organizando una noche de música electrónica en la tienda pronto, ¿quieres que te agreguemos a la lista de invitados? <span class="message-time">27/04/24</span></p>
               </div>
             </div>
           </li>
-          <li class="chat-list__item no-leido">
+          <li class="chat-list__item">
             <div class="chat-list__content">
               <div class="chat-list__img">
                 <img src="https://mighty.tools/mockmind-api/content/abstract/38.jpg" alt="">
               </div>
               <div class="chat-list__info">
                 <div class="chat-list__name">
-                  <h5>Sam</h5>
+                  <h5>Sam <span class="icon-right"><i class="fa-solid fa-check-double"></i></span></h5>
                 </div>
-                <p>¿Puedo recibir actualizaciones sobre el estado del pedido?</p>
+                <p> Tenemos una sección dedicada a la música electrónica, con los últimos lanzamientos y clásicos del género. <span class="message-time">26/07/24</span></p>
               </div>
             </div>
           </li>
@@ -156,9 +157,9 @@
               </div>
               <div class="chat-list__info">
                 <div class="chat-list__name">
-                  <h5>Rafa</h5><i class="fa-solid fa-check-double"></i>
+                  <h5>Rafa <span class="icon-right"><i class="fa-solid fa-check-double"></i></span></h5>
                 </div>
-                <p>Sí, te enviaremos notificaciones por correo y puedes seguir el envío en nuestra app</p>
+                <p>Sí, te enviaremos notificaciones por correo y puedes seguir el envío en nuestra app. <span class="message-time">26/07/24</span></p>
               </div>
             </div>
           </li>
@@ -169,22 +170,23 @@
               </div>
               <div class="chat-list__info">
                 <div class="chat-list__name">
-                  <h5>Val</h5><i class="fa-solid fa-check-double"></i>
+                  <h5>Val <span class="icon-right"><i class="fa-solid fa-check-double"></i></span></h5>
                 </div>
-                <p>Tu número de seguimiento es #123456789. Puedes rastrear tu pedido en el enlace proporcionado en el correo.</p>
+                <p>Tu número de seguimiento es #123456789. Puedes rastrear tu pedido en el enlace proporcionado en el
+                  correo. <span class="message-time">25/07/24</span></p>
               </div>
             </div>
           </li>
-          <li class="chat-list__item no-leido">
+          <li class="chat-list__item">
             <div class="chat-list__content">
               <div class="chat-list__img">
                 <img src="https://mighty.tools/mockmind-api/content/abstract/48.jpg" alt="">
               </div>
               <div class="chat-list__info">
                 <div class="chat-list__name">
-                  <h5>Cruz</h5>
+                  <h5>Cruz <span class="icon-right"><i class="fa-solid fa-check-double"></i></span></h5>
                 </div>
-                <p>¿Cuál es el número de seguimiento del pedido?</p>
+                <p>Lo sentimos, el vinilo que buscas está agotado, pero podemos pedirlo especialmente para ti y recibirlo en un plazo de 10 días hábiles. <span class="message-time">25/07/24</span></p>
               </div>
             </div>
           </li>
@@ -193,9 +195,147 @@
     </section>
 
     <section class="chat-right">
+
+      <div class="recents-chats">
+        <div class="accordion" id="accordionChats">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                aria-expanded="false" aria-controls="collapseOne">
+                Chats recientes:
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+              data-bs-parent="#accordionChats">
+              <div class="accordion-body">
+                <ul class="list-group">
+                  <li class="list-group-item active">
+                    <div class="list-group__content">
+                      <div class="list-group__img">
+                        <img src="https://mighty.tools/mockmind-api/content/abstract/51.jpg" alt="">
+                      </div>
+                      <div class="chat-list__info">
+                        <div class="chat-list__name">
+                          <h6 class="chat-info-emma">Emma</h6>
+                        </div>
+                        <p>¡Hasta luego, Emma!</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="list-group__content">
+                      <div class="list-group__img">
+                        <img src="https://mighty.tools/mockmind-api/content/abstract/51.jpg" alt="">
+                      </div>
+                      <div class="chat-list__info">
+                        <div class="chat-list__name">
+                          <h6>Alexis</h6>
+                        </div>
+                        <p>¡Sí! Tenemos una gran variedad de controladores MIDI para que puedas crear y producir música electrónica con facilidad.</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="list-group__content">
+                      <div class="list-group__img">
+                        <img src="https://mighty.tools/mockmind-api/content/abstract/44.jpg" alt="">
+                      </div>
+                      <div class="chat-list__info">
+                        <div class="chat-list__name">
+                          <h5>Ángel</h5>
+                        </div>
+                        <p>Tu pedido debería llegar en 2-3 días hábiles.</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="list-group__content">
+                      <div class="list-group__img">
+                        <img src="https://mighty.tools/mockmind-api/content/abstract/36.jpg" alt="">
+                      </div>
+                      <div class="chat-list__info">
+                        <div class="chat-list__name">
+                          <h5>Marian</h5>
+                        </div>
+                        <p>Sí, te enviaremos notificaciones por correo y puedes seguir el envío en nuestra app</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="list-group__content">
+                      <div class="list-group__img">
+                        <img src="https://mighty.tools/mockmind-api/content/abstract/40.jpg" alt="">
+                      </div>
+                      <div class="chat-list__info">
+                        <div class="chat-list__name">
+                          <h5>Rocío</h5>
+                        </div>
+                        <p>Estamos organizando una noche de música electrónica en la tienda pronto, ¿quieres que te agreguemos a la lista de invitados?</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="list-group__content">
+                      <div class="list-group__img">
+                        <img src="https://mighty.tools/mockmind-api/content/abstract/38.jpg" alt="">
+                      </div>
+                      <div class="chat-list__info">
+                        <div class="chat-list__name">
+                          <h5>Sam</h5>
+                        </div>
+                        <p> Tenemos una sección dedicada a la música electrónica, con los últimos lanzamientos y clásicos del género.</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="list-group__content">
+                      <div class="list-group__img">
+                        <img src="https://mighty.tools/mockmind-api/content/abstract/19.jpg" alt="">
+                      </div>
+                      <div class="chat-list__info">
+                        <div class="chat-list__name">
+                          <h5>Rafa</h5>
+                        </div>
+                        <p>Sí, te enviaremos notificaciones por correo y puedes seguir el envío en nuestra app</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="list-group__content">
+                      <div class="list-group__img">
+                        <img src="https://mighty.tools/mockmind-api/content/abstract/50.jpg" alt="">
+                      </div>
+                      <div class="chat-list__info">
+                        <div class="chat-list__name">
+                          <h5>Val</h5>
+                        </div>
+                        <p>Tu número de seguimiento es #123456789. Puedes rastrear tu pedido en el enlace proporcionado en el
+                          correo.</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="list-group__content">
+                      <div class="list-group__img">
+                        <img src="https://mighty.tools/mockmind-api/content/abstract/48.jpg" alt="">
+                      </div>
+                      <div class="chat-list__info">
+                        <div class="chat-list__name">
+                          <h5>Cruz</h5>
+                        </div>
+                        <p>Lo sentimos, el vinilo que buscas está agotado, pero podemos pedirlo especialmente para ti y recibirlo en un plazo de 10 días hábiles.</p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="chat-header__right">
         <div class="chat-header__left-group">
-          <button class="arrow-left"><i class="fa-solid fa-arrow-left" id="arrow-left"></i></button>
           <div class="chat-pp">
             <img src="https://mighty.tools/mockmind-api/content/abstract/36.jpg" alt="">
           </div>
@@ -206,9 +346,11 @@
         </div>
         <div class="chat-header__options">
           <li class="nav-item dropdown" id="paperclip">
-            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><i class="fa-solid fa-paperclip"></i></a>
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+              aria-expanded="false"><i class="fa-solid fa-paperclip"></i></a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">Foto / Video <i class="fa-solid fa-photo-film"></i></a></li>
+              <li><a class="dropdown-item" href="#">Audio <i class="fa-regular fa-file-audio"></i></a></li>
               <li><a class="dropdown-item" href="#">Documento <i class="fa-solid fa-file"></i></a></li>
             </ul>
           </li>
@@ -220,29 +362,27 @@
           <p>Hola, buenas tardes. Tengo una duda sobre mi pedido.<span class="message-time">15:24</span></p>
         </div>
         <div class="message-bubble cluster">
-          <p>Hola, Emma. Claro, ¿puedes darme tu número de pedido?<span class="message-time">15:26</span><i
-              class="fa-solid fa-check-double double-check"></i></p>
+          <p>Hola, Emma. Claro, ¿puedes darme tu número de pedido?<span class="message-time">15:26</span>
         </div>
         <div class="message-bubble emma">
           <p>Mi número de pedido es CR-34567. ¿Dónde está mi pedido?<span class="message-time">15:27</span></p>
         </div>
         <div class="message-bubble cluster">
           <p>Tu pedido está en proceso de envío y debería llegar en 2-3 días hábiles.<span
-              class="message-time">15:29</span><i class="fa-solid fa-check-double double-check"></i></p>
+              class="message-time">15:29</span></p>
         </div>
         <div class="message-bubble emma">
           <p>¿Puedo recibir notificaciones sobre el estado del envío?<span class="message-time">15:30</span></p>
         </div>
         <div class="message-bubble cluster">
           <p>Sí, te enviaremos notificaciones por correo y puedes seguir el envío en nuestra app.<span
-              class="message-time">15:32</span><i class="fa-solid fa-check-double double-check"></i></p>
+              class="message-time">15:32</span></p>
         </div>
         <div class="message-bubble emma">
           <p>Gracias, esperaré las notificaciones.<span class="message-time">15:33</span></p>
         </div>
         <div class="message-bubble cluster">
-          <p>De nada, Emma. ¡Que tengas un buen día!<span class="message-time">15:35</span><i
-              class="fa-solid fa-check-double double-check"></i></p>
+          <p>De nada, Emma. ¡Que tengas un buen día!<span class="message-time">15:35</span></p>
         </div>
         <div class="message-bubble emma">
           <p>Igualmente, gracias.<span class="message-time">15:36</span></p>
@@ -252,28 +392,26 @@
         </div>
         <div class="message-bubble cluster">
           <p>Sí, tenemos un programa de fidelización con descuentos exclusivos. Puedes registrarte en nuestra web.<span
-              class="message-time">15:42</span><i class="fa-solid fa-check-double double-check"></i></p>
+              class="message-time">15:42</span></p>
         </div>
         <div class="message-bubble emma">
           <p>Genial, me interesa mucho. ¿Cómo puedo registrarme?<span class="message-time">15:45</span></p>
         </div>
         <div class="message-bubble cluster">
           <p>Solo tienes que iniciar sesión en tu cuenta y seguir las instrucciones en la sección de fidelización.<span
-              class="message-time">15:47</span><i class="fa-solid fa-check-double double-check"></i></p>
+              class="message-time">15:47</span></p>
         </div>
         <div class="message-bubble emma">
           <p>Perfecto, lo haré. Muchas gracias por la ayuda.<span class="message-time">15:50</span></p>
         </div>
         <div class="message-bubble cluster">
-          <p>De nada, Emma. Estamos aquí para ayudarte.<span class="message-time">15:52</span><i
-              class="fa-solid fa-check-double double-check"></i></p>
+          <p>De nada, Emma. Estamos aquí para ayudarte.<span class="message-time">15:52</span></p>
         </div>
         <div class="message-bubble emma">
           <p>¡Hasta luego!<span class="message-time">15:54</span></p>
         </div>
         <div class="message-bubble cluster">
-          <p>¡Hasta luego, Emma!<span class="message-time">15:55</span><i
-              class="fa-solid fa-check-double double-check"></i></p>
+          <p>¡Hasta luego, Emma!<span class="message-time">15:55</span></p>
         </div>
       </div>
       <form class="chat-form">
@@ -281,13 +419,15 @@
         <button class="send-button" type="submit">
           <i class="fa-solid fa-paper-plane"></i>
         </button>
-    </form>
+      </form>
+    </section>
     </section>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+  <script src="JS/script.js"></script>
 </body>
 
 </html>
