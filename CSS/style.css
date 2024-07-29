@@ -11,11 +11,11 @@ i {
 
 
 nav {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .nav-link {
-    font-size: 12px;
+    font-size: 11px;
 }
 
 body {
@@ -65,6 +65,7 @@ body {
 
 .accordion-button {
     font-size: 15px;
+    padding: 10px 15px;
     background-color: #eeaeca;
 }
 
@@ -132,7 +133,7 @@ body {
     justify-content: center;
     width: 90%;
     margin: 0 auto;
-    margin-bottom: 30px;
+    margin-bottom: 23px;
 
 }
 
@@ -148,7 +149,7 @@ body {
 }
 
 p {
-    font-size: 10px;
+    font-size: 11px;
 }
 h5 {
     font-size: 15px;
@@ -171,7 +172,7 @@ h5 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 15px 15px;
+    padding: 10px 10px;
     background-color: #f5f5dc;
     border-radius: 5px;
     margin-bottom: 10px;
@@ -258,7 +259,7 @@ h5 {
     padding: 15px;
     border-radius: 5px;
     overflow-y: auto;
-    height: 70vh;
+    height: 60vh;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -350,9 +351,18 @@ footer p {
     padding-bottom: 20px;
 }
 
+.days {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
 /* TABLET */
 @media (min-width: 992px) {
-
+    nav {
+        margin-bottom: 20px;
+    }
     .recents-chats {
         display: none;
     }
@@ -399,7 +409,7 @@ footer p {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 22px 0;
+        padding: 17px 0;
 
     }
 
@@ -540,4 +550,7 @@ footer p {
         padding: 5px;
     }
 
+    .chat-window {
+        height: 70vh;
+    }
 }
