@@ -9,6 +9,7 @@ i {
     font-size: 20px
 }
 
+
 nav {
     margin-bottom: 10px;
 }
@@ -110,6 +111,16 @@ body {
     border-radius: 50%;
 }
 
+.message-time {
+    font-size: 10px;
+    color: gray;
+    margin-left: 10px;
+    font-weight: 300;
+}
+
+.list-group__content p span {
+    float: right;
+}
 
 /*BODY*/
 
@@ -478,11 +489,6 @@ p {
     .chat-list__info p {
         margin: 0;
         align-items: flex-end;
-    }
-
-    .chat-right {
-        margin: 0;
-
     }
 
     .message-time {
