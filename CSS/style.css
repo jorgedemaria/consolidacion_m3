@@ -84,6 +84,7 @@ body {
 .list-group-item {
     text-decoration: none;
     color: black;
+    padding: 8px 10px;
 }
 
 .list-group-item:hover {
